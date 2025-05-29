@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tosarabo Co. Ltd.</title>
+  <!-- bootstrap library -->
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navbar with Mega Dropdown -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" height="50"> Tosarabo Co. Ltd.
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+  
+          <!-- Mega Dropdown -->
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesMegaDropdown" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <div class="dropdown-menu w-100 mt-0 border-top-0 shadow mega-dropdown" aria-labelledby="servicesMegaDropdown">
+              <div class="container py-4">
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="text-decoration-none text-dark d-block hover-zoom">
+                      <img src="service1.jpg" class="img-fluid rounded mb-2" alt="Cloud Solutions">
+                      <h6 class="fw-bold mb-0">Cloud Solutions</h6>
+                      <small>Powered by AWS & Azure</small>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="text-decoration-none text-dark d-block hover-zoom">
+                      <img src="service4.jpg" class="img-fluid rounded mb-2" alt="Kubernetes Solutions">
+                      <h6 class="fw-bold mb-0">Kubernetes Solutions</h6>
+                      <small>ClusterIP, NodePort, LoadBalancer</small>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="text-decoration-none text-dark d-block hover-zoom">
+                      <img src="service3.jpg" class="img-fluid rounded mb-2" alt="AI & ML">
+                      <h6 class="fw-bold mb-0">AI & ML</h6>
+                      <small>Smart automation for growth</small>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="text-decoration-none text-dark d-block hover-zoom">
+                      <img src="service5.jpg" class="img-fluid rounded mb-2" alt="Web Solutions">
+                      <h6 class="fw-bold mb-0">Web Solutions</h6>
+                      <small>Secure, scalable, and user-friendly applications</small>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="text-decoration-none text-dark d-block hover-zoom">
+                      <img src="service6.jpg" class="img-fluid rounded mb-2" alt="App Development">
+                      <h6 class="fw-bold mb-0">App Development</h6>
+                      <small>High-performance Android and iOS apps</small>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="text-decoration-none text-dark d-block hover-zoom">
+                      <img src="service2.jpg" class="img-fluid rounded mb-2" alt="Data Analytics">
+                      <h6 class="fw-bold mb-0">Data Utilization</h6>
+                      <small>Insights that drive success</small>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seminar">Seminar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#media">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Hero Header / Slider -->
+  <header class="bg-light text-dark py-5 shadow border border-light rounded mb-4">
+    <div class="container">
+        <h1 class="display-4">Welcome to Tosarabo Co. Ltd.</h1>
+        <p class="lead">Your partner in digital transformation.</p>
+      <div class="row align-items-center">
+        
+        <!-- Left Column: Text/News -->
+        <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+          <h1 class="display-5 fw-bold">Your Business Tagline</h1>
+          <p class="lead">Empowering your digital transformation journey.</p>
+          <ul class="list-unstyled">
+            <li>🔹 Latest news or update #1</li>
+            <li>🔹 Upcoming event or seminar</li>
+            <li>🔹 Product launch or feature</li>
+          </ul>
+          <a href="#services" class="btn btn-primary mt-3">Explore Services</a>
+        </div>
+  
+        <!-- Right Column: Slider -->
+        <div class="col-md-6">
+          <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img src="slide1.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="slide2.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="slide3.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>  
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row g-4">
+        <!-- service 1-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="aws-logo.png" alt="AWS" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tosarabo's comprehensive AWS support</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    We support your use of AWS, from cost optimization to security, construction support, and operation and maintenance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- service 2-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="cloud-logo.png" alt="Cloud support" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tosarabo's comprehensive Cloud support</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    We support your use of AWS, from cost optimization to security, construction support, and operation and maintenance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- service 3-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="kubernetes-logo.png" alt="Kubernetes support" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tosarabo's comprehensive Kubernetes support</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    Get expert guidance on Kubernetes architecture, cluster setup, CI/CD integration, and autoscaling We help you to operate reliable applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- service 4-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="AI-logo.png" alt="Generative AI Consulting" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Generative AI Consulting</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    Consulting using GPT, Claude, and Gemini to automate tasks, build AI copilots, and optimize business workflows. We support everything from prompt engineering to system implementation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- service 5-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="web-app-dev-icon.png" alt="Web App Development" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Web Application Development</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    We design and build secure, scalable, and user-friendly web applications tailored to your business needs. From admin panels to complex SaaS platforms,full-stack delivery is our expertise.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- service 6-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="app-dev-icon.png" alt="App Development" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">App Development</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    We develop high-performance Android and iOS apps with modern UX and seamless backend integration. Whether you're building a business tool, eCommerce app, or customer platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- service 7-->
+        <div class="col-md-6">
+          <div class="card shadow-sm rounded-3 mb-4 position-relative card-hover-border" style="max-width: 700px;">
+            <div class="row g-0">
+              <!-- Image Column -->
+              <div class="col-md-3">
+                <img src="data-utilization-icon.png" alt="App Development" class="img-fluid h-100 object-fit-cover rounded-start">
+              </div>
+              <!-- Text Column -->
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Data Utilization</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.95rem;">
+                    We help you unlock the full potential of your data using modern analytics, dashboards, and machine learning. From data strategy to real-time BI tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ✅ Right-Aligned Arrow -->
+            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+              <a href="#" class="text-decoration-none">
+                <span class="fs-4 text-primary">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for more services -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples / Case Studies -->
+  <section id="examples" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Case Studies</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="example.jpg" class="card-img-top" alt="Example" />
+            <div class="card-body">
+              <h5 class="card-title">Project Title</h5>
+              <p class="card-text">Short case study description.</p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas of Expertise -->
+  <section id="expertise" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Areas of Expertise</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <div class="p-4 bg-white shadow-sm rounded">
+            <h5>Cloud (AWS)</h5>
+            <p class="small">Expert deployment and management.</p>
+          </div>
+        </div>
+        <!-- Repeat -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Products -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="product.jpg" class="card-img-top" alt="Product">
+            <div class="card-body">
+              <h5 class="card-title">Product Name</h5>
+              <p class="card-text">Short product description.</p>
+              <a href="#" class="btn btn-outline-primary">See Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Seminars / Events -->
+  <section id="seminar" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Seminars & Events</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Event</h5>
+              <p class="card-text">Date: May 20, 2025<br />Short description about the event.</p>
+              <a href="#" class="btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Media / Blog / News -->
+  <section id="media" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Latest Media</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="news.jpg" class="card-img-top" alt="News">
+            <div class="card-body">
+              <h5 class="card-title">News Title</h5>
+              <p class="card-text">Short news or blog snippet.</p>
+              <a href="#" class="btn btn-outline-secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+      <p>
+        <a href="#" class="text-white text-decoration-none mx-2">Home</a> |
+        <a href="#" class="text-white text-decoration-none mx-2">Contact</a> |
+        <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

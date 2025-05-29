@@ -1,0 +1,35 @@
+/* Mega menu full width */
+.mega-dropdown {
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.nav-item.dropdown:hover .mega-dropdown {
+    display: block;
+}
+
+/* Hover zoom effect */
+.hover-zoom img {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.05);
+}
+.navbar-nav .nav-link {
+    font-weight: 700;
+}
+
+.card-hover-border {
+    border: 1px solid transparent;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-border:hover {
+    border: 2px solid #0d6efd;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+}
