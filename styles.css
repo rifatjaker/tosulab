@@ -33,3 +33,45 @@
     border: 2px solid #0d6efd;
     box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
 }
+
+.news-item:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+    text-decoration: none;
+}
+
+.news-item:hover .text-dark {
+    color: #0d6efd !important; /* Bootstrap primary color */
+    text-decoration: underline;
+}
+
+.news-item:hover .arrow-hover {
+    transform: translateX(4px);
+    transition: transform 0.2s ease;
+}
+
+.arrow-hover {
+    transition: transform 0.2s ease;
+}
+
+.btn-with-arrow {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-with-arrow .arrow {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.btn-with-arrow:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Optional: stronger hover effect */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+}

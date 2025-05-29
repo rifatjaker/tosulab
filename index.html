@@ -13,8 +13,8 @@
 </head>
 <body>
 
-<!-- Navbar with Mega Dropdown -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <!-- Navbar with Mega Dropdown -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="logo.png" alt="Logo" height="50"> Tosarabo Co. Ltd.
@@ -101,7 +101,6 @@
     </div>
   </nav>
   
-
   <!-- Hero Header / Slider -->
   <header class="bg-light text-dark py-5 shadow border border-light rounded mb-4">
     <div class="container">
@@ -118,7 +117,15 @@
             <li>🔹 Upcoming event or seminar</li>
             <li>🔹 Product launch or feature</li>
           </ul>
-          <a href="#services" class="btn btn-primary mt-3">Explore Services</a>
+          <!-- Explore Services Button -->
+          <a href="#services" class="btn btn-primary mt-3 btn-with-arrow">
+            Explore Services <span class="arrow">&rarr;</span>
+          </a>
+
+          <!-- Inquiry Button -->
+          <a href="#contact" class="btn btn-outline-primary mt-3 ms-2 btn-with-arrow">
+            Inquiry <span class="arrow">&rarr;</span>
+          </a>
         </div>
   
         <!-- Right Column: Slider -->
@@ -146,12 +153,49 @@
   
       </div>
     </div>
-  </header>  
+  </header>
+
+  <!-- NEWS SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4">News</h2>
+      <div class="list-group list-group-flush">
+        <!-- News Item 1 -->
+        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start py-3 news-item">
+          <div>
+            <div class="fw-bold small text-uppercase text-secondary mb-1">Heading 1</div>
+            <div class="text-dark fw-medium">
+              Wins "Consulting Partner of the Year -Japan" award as AWS' best SI partner in Japan ~ Recognized for top contributions in Japan...
+            </div>
+          </div>
+          <div class="text-end ms-3 d-flex flex-column align-items-end">
+            <small class="text-muted mb-1">2025/05/08</small>
+            <span class="fs-5 text-primary arrow-hover">&rarr;</span>
+          </div>
+        </a>
+        <!-- News Item 2 -->
+        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start py-3 news-item">
+          <div>
+            <div class="fw-bold small text-uppercase text-secondary mb-1">Heading 2</div>
+            <div class="text-dark fw-medium">
+              [June 25–26, Tokyo] We will exhibit at "AWS Summit Japan 2025" and introduce the Mitsubishi UFJ Bank case study...
+            </div>
+          </div>
+          <div class="text-end ms-3 d-flex flex-column align-items-end">
+            <small class="text-muted mb-1">2025/04/22</small>
+            <span class="fs-5 text-primary arrow-hover">&rarr;</span>
+          </div>
+        </a>
+        <!-- News Item 3 -->
+      </div>
+    </div>
+  </section>
+
 
   <!-- Services Section -->
   <section id="services" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
+      <h2 class="fw-bold mb-4">Our Services</h2>
       <div class="row g-4">
         <!-- service 1-->
         <div class="col-md-6">
