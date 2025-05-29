@@ -53,25 +53,46 @@
     transition: transform 0.2s ease;
 }
 
-.btn-with-arrow {
-    position: relative;
-    display: inline-flex;
+.btn-with-icon {
+    display: flex;
     align-items: center;
-    transition: background-color 0.3s, border-color 0.3s;
+    justify-content: space-between;
+    transition: box-shadow 0.3s;
+    width: 100%;
 }
 
-.btn-with-arrow .arrow {
-    display: inline-block;
-    margin-left: 8px;
-    transition: transform 0.2s ease;
+.btn-with-icon .icon-start {
+    width: 24px;
+    height: 24px;
 }
 
-.btn-with-arrow:hover .arrow {
-    transform: translateX(4px);
+.btn-with-icon .arrow {
+    transition: transform 0.3s ease;
+    font-size: 1.25rem;
 }
 
-/* Optional: stronger hover effect */
-.btn-primary:hover,
-.btn-outline-primary:hover {
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+.btn-with-icon:hover .arrow {
+    transform: translateX(6px);
+}
+
+/* Text turns white on hover */
+.btn-primary.btn-with-icon:hover,
+.btn-outline-primary.btn-with-icon:hover {
+    color: #fff;
+}
+
+/* Optional: override text color in child spans if needed */
+.btn-with-icon:hover span {
+    color: #fff !important;
+}
+
+/* Optional: make sure arrow stays white on hover */
+.btn-with-icon:hover .arrow {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .btn-with-icon {
+        width: 100%;
+    }
 }
